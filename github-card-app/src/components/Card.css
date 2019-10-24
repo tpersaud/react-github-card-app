@@ -1,0 +1,11 @@
+.profile-card{
+  border: 2px solid grey;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 25px;
+}
+
+.profile-image{
+  padding: 5px 0;
+}
