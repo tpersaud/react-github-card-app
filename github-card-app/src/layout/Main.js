@@ -1,5 +1,6 @@
 import React, { Component }from 'react';
 import CardList from '../components/CardList';
+import SearchForm from '../components/SearchForm';
 
 import './Main.css'
 
@@ -12,9 +13,8 @@ export default class Main extends Component {
     ];
     return(
       <section className="main">
-        <div className="content">
-          <CardList cardArray={testData}/>
-        </div>
+        <SearchForm />
+        <CardList cardArray={testData}/>
       </section>
   )}
 }

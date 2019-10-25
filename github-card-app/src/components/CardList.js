@@ -6,12 +6,10 @@ export default class CardList extends Component {
 
     const testData = this.props.cardArray;
 
-    let result = testData.map(data => <Card profile={data} key={data.id} />);
-
     return (
-      <React.Fragment>
-        {result}
-      </React.Fragment>
+      <div className="card-container">
+        {testData.map(data => <Card profile={data} key={data.id} />)}
+      </div>
     )
   };
 }
