@@ -1,11 +1,25 @@
 .profile-card{
   border: 2px solid grey;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
+  /* height: 100px;
+  width: 35%; */
+  padding: 10px;
+  /* flex-direction: row; */
   margin: 10px 25px;
+  background: black;
+}
+
+.card{
+  display: inline-flex;
 }
 
 .profile-image{
   padding: 5px 0;
+  height: 25%;
+  width: 25%;
+}
+
+.details{
+  padding: 0 25px;
+  background: white;
+  color:black;
 }

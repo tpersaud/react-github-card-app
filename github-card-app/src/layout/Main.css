@@ -1,17 +1,17 @@
 .main{
   flex:1;
   padding: 2em 0;
+  margin: 2em 0;
 }
 
 .content{
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: center;
-  overflow: auto;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .content{
     justify-content: flex-start;
   }
-}
+} */
