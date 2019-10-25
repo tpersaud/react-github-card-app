@@ -10,7 +10,13 @@ export default class SearchForm extends Component {
     event.preventDefault();
     const userName = this.state.userName;
     let url = `https://api.github.com/users/${userName}`;
-    console.log(url);
+
+    try {
+      let res = await axios.get(url);
+      this.props.addNewProfile(res.data);
+    } catch(error) {
+      alert('Didn\'t find username');
+    }
   }
 
   render() { 

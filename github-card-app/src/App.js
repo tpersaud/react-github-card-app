@@ -6,7 +6,7 @@ import Footer from './layout/Footer';
 import Main from './layout/Main';
 
 function App() {
-  let title = "Github Card App"
+  let title = "Github Card App";
   return (
     <main>
       <Header title={title} />
