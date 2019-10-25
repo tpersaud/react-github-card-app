@@ -9,9 +9,9 @@ export default class CardList extends Component {
     let result = testData.map(data => <Card profile={data} key={data.id} />);
 
     return (
-      <article className="card-list">
+      <React.Fragment>
         {result}
-      </article>
+      </React.Fragment>
     )
   };
 }
